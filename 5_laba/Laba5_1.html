@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+     <meta content="text/html">
+       <title>Вариант 17(2) Хазиахметов Задание 1</title>
+       <link rel="stylesheet" href="/style.CSS">
+    </head>
+    <body>
+     <script>
+        let x=prompt("Введите строку на латинице","");
+        let a=x.length;
+        let acol=0;
+        let bcol=0;
+        for(let i=0;i<a;i++)
+        {
+            if(x[i]==",")
+            {
+                document.write(x[i]," ");
+            }
+            else
+            {
+                document.write(x[i]); 
+            }
+            if(x[i]=="A")
+            {
+                acol++;
+            }
+            if(x[i]=="B")
+            {
+                bcol++;
+            }
+        }
+        document.write("<br></br>");
+        document.write(acol);
+        document.write("<br></br>");
+        document.write(bcol);
+
+
+     </script>
+    </body>
+ </html>

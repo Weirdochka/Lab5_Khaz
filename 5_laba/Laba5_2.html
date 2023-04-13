@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+     <meta content="text/html">
+       <title>Вариант 17(2) Хазиахметов Задание 1</title>
+       <link rel="stylesheet" href="/style.CSS">
+    </head>
+    <body>
+     <script>
+        let x=prompt("Введите строку","");
+        let a=x.length;
+        let acol=0;
+        let bcol=0;
+        let fprob=0;
+        let lprob=0;
+        for(let i=0;i<a;i++)
+        {
+            if(x[i]==" ")
+            {
+                acol++;
+                lprob=i;
+            }
+            
+            if(acol==1 && x[i]!=" ")
+            {
+                fprob=i-2;
+            }
+            if(acol==2 && x[i]!=" ")
+            {
+               bcol++;
+            }
+            
+        }
+
+        document.write(bcol);
+        document.write("<br></br>");
+        document.write(x.slice(lprob)," ",x.slice(fprob,lprob)," ",x.slice(0,fprob));
+     </script>
+    </body>
+ </html>
